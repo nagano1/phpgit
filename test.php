@@ -35,6 +35,9 @@ exec($exec_cmd, $output, $retval);
 
 $ary = array('a'=>"Taro", 'b'=>"John", 'c'=>"Nikita", 'd'=>"Jiro", 'e'=>"Saburo" );
 $ary["cmd"] = $exec_cmd;
+$ary["post"] = $_POST;
+$original_string = "original";
+$ary["sha256"] = hash('sha256', $original_string);
 $ary["message"] = "Returned with status $retval and output:\n<br/>";
 
 $json = json_encode($ary);
