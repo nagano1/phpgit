@@ -35,6 +35,7 @@ $exec_cmd = escapeshellcmd("$git $git_args");
 
 exec($exec_cmd, $output, $retval);
 
+
 $ary = array('a'=>"Taro26", 'b'=>"John", 'c'=>"Nikita", 'd'=>"Jiro", 'e'=>"Saburo" );
 $ary["cmd"] = $exec_cmd;
 $ary["post"] = $_POST;
